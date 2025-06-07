@@ -82,7 +82,7 @@ Or just run the helper:
 ./build.sh
 ```
 
-### Deploy infrastructure
+### 2. Deploy infrastructure
 
 ```bash
 cd terraform
