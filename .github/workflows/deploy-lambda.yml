@@ -22,8 +22,8 @@ jobs:
       - name: Install dependencies and package lambda
         run: |
           cd lambda
-          chmod +x build.sh
-          ./build.sh
+          pip install -r requirements.txt -t .
+          zip -r lambda.zip . -x "__pycache__/*"
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
